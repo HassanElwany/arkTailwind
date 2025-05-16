@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  /* Custom Color Palette */
+  --color-charcoal: #000000;
+  --color-orange: #ff6a13;
+  --color-white: #ffffff;
+  --color-slate: #4b4b4b;
+  --color-steel: #4682b4;
+
+  /* Set up semantic color tokens */
+  --color-primary: var(--color-orange);
+  --color-primary-content: var(--color-white);
+
+  --color-secondary: var(--color-steel);
+  --color-secondary-content: var(--color-white);
+
+  --color-neutral: var(--color-slate);
+  --color-neutral-content: var(--color-white);
+
+  --color-base-100: var(--color-white);
+  --color-base-200: #f8f9fa;
+  --color-base-300: #e9ecef;
+  --color-base-content: var(--color-charcoal);
+}
