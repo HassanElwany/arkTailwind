@@ -1,6 +1,29 @@
 @import "tailwindcss";
 
+/* Base font settings */
+@layer base {
+  html {
+    
+    font-family: "Open Sans", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Inter", sans-serif;
+  }
+}
+
 @theme {
+  /* Breakpoints */
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1020px;
+  --breakpoint-xl: 1440px;
+
   /* Custom Color Palette */
   --color-charcoal: #000000;
   --color-orange: #ff6a13;
