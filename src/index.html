@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Preconnect to Google Fonts domains for faster loading -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <title>
       Arc Al Bonian Contracting - Leading Saudi Construction Company
     </title>
@@ -39,11 +42,288 @@
       }
     </script>
   </head>
-  <body class="bg-base-200 min-h-screen text-base-content">
+  <body>
     <!-- Header/Navigation -->
+    <header
+      class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-gray-900/95 via-gray-800/95 to-orange-600/85 backdrop-blur-sm h-[10vh]"
+    >
+      <nav class="container relative mx-auto h-full flex items-center px-6">
+        <!-- Flex Container for nav items  -->
+        <div class="flex items-center justify-between space-x-4 w-full">
+          <!-- Logo -->
+          <div class="flex items-center z-30">
+            <img
+              src="../images/logo arc.svg"
+              alt="Arc Al Bonian Contracting Logo"
+              class="h-16 w-16"
+            />
+            <h1 class="text-2xl font-bold text-amber-50">
+              AR<span class="text-orange">C</span> Al Bonian
+            </h1>
+          </div>
 
+          <!-- Navigation Links -->
+          <div
+            class="hidden md:flex items-center space-x-8 uppercase font-semibold text-amber-50"
+          >
+            <a
+              href="#hero"
+              class="tracking-widest hover:text-orange hover:underline decoration-orange focus:text-orange"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="tracking-widest hover:text-orange hover:underline decoration-orange focus:text-orange"
+              >About</a
+            >
+            <a
+              href="#projects"
+              class="tracking-widest hover:text-orange hover:underline decoration-orange focus:text-orange"
+              >Projects</a
+            >
+            <a
+              href="#services"
+              class="tracking-widest hover:text-orange hover:underline decoration-orange focus:text-orange"
+              >Services</a
+            >
+            <a
+              href="#contact"
+              class="tracking-widest px-4 py-2 text-amber-50 bg-steel border-2 border-steel rounded-2xl shadow-md hover:text-steel hover:bg-amber-50"
+              >Contact Us</a
+            >
+          </div>
 
+          <!-- Hamburger Menu for Mobile -->
+          <div class="md:hidden">
+            <button id="menu-toggle" class="focus:outline-none" aria-expanded="false" aria-controls="mobile-menu">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-8 h-8 text-amber-50 hover:text-orange"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
 
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden fixed top-[10vh] left-0 right-0 bg-gradient-to-r from-gray-900/95 via-gray-800/95 to-orange-600/85 backdrop-blur-sm p-6 space-y-4 md:hidden transition-all duration-300 ease-in-out transform translate-y-0 shadow-lg">
+          <div class="flex flex-col items-center space-y-4 uppercase font-semibold text-amber-50">
+            <a href="#hero" class="w-full text-center tracking-widest hover:text-orange hover:underline decoration-orange focus:text-orange py-2">Home</a>
+            <a href="#about" class="w-full text-center tracking-widest hover:text-orange hover:underline decoration-orange focus:text-orange py-2">About</a>
+            <a href="#projects" class="w-full text-center tracking-widest hover:text-orange hover:underline decoration-orange focus:text-orange py-2">Projects</a>
+            <a href="#services" class="w-full text-center tracking-widest hover:text-orange hover:underline decoration-orange focus:text-orange py-2">Services</a>
+            <a href="#contact" class="w-full text-center tracking-widest px-4 py-2 text-amber-50 bg-steel border-2 border-steel rounded-2xl shadow-md hover:text-steel hover:bg-amber-50">Contact Us</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="relative w-full h-screen overflow-hidden pt-[10vh]"
+    >
+      <!-- Background Image (Initial) -->
+      <div
+        id="hero-image"
+        class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style="background-image: url('../images/hero.jpg')"
+      ></div>
 
+      <!-- Background Video (Hidden Initially) -->
+      <video
+        id="hero-video"
+        class="absolute inset-0 w-full h-full object-cover hidden md:block"
+        muted
+        autoplay
+        loop
+        playsinline
+        preload="auto"
+      >
+        <source src="../images/video_preview_h264.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-gray-900/60"></div>
+
+      <!-- Text Content -->
+      <div
+        class="relative z-10 flex flex-col items-center justify-center h-full text-center text-amber-50 px-6"
+      >
+        <h1
+          class="text-4xl md:text-5xl lg:text-6xl font-bold font-open-sans mb-4"
+        >
+          Building the Future of Saudi Arabia
+        </h1>
+        <p class="text-lg md:text-xl lg:text-2xl font-inter max-w-2xl">
+          Arc Al Bonian Contracting delivers innovative construction solutions
+          with precision, quality, and advanced engineering techniques.
+        </p>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section
+      id="about"
+      class="relative py-16 px-6 bg-gradient-to-r from-charcoal via-slate to-orange/90 text-white"
+    >
+      <div class="container mx-auto">
+        <!-- Who Are We -->
+        <div class="text-center mb-12">
+          <h2
+            class="text-4xl md:text-5xl font-bold font-open-sans text-orange mb-4"
+          >
+            Who Are We
+          </h2>
+          <p class="text-lg md:text-xl font-inter max-w-3xl mx-auto">
+            Arc Al-Bonian General Contracting was established with its great
+            dream and endless limits in providing quality solutions and using
+            the latest technology methods, advanced engineering techniques, and
+            the most creative designs to enter the field of construction and
+            development from its widest doors with its competitive advantages.
+            Arc Al-Bonian believes that the whole world is moving at a rapid
+            pace to a tremendous technological development and it must keep pace
+            with this development and contribute effectively to serving our
+            community and providing the best services with the highest standards
+            of quality and professionalism because the entity has specialized
+            technical and engineering cadres with long experience and trained
+            labor according to scientific foundations and high efficiency,
+            taking into account the highest safety standards to contribute
+            seriously and effectively to construction and development, as well
+            as aim to build a well-known name and a brilliant brand in its
+            field.
+          </p>
+        </div>
+
+        <!-- Images Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          <div class="relative overflow-hidden rounded-lg shadow-lg group">
+            <img
+              src="../images/about1.jpg"
+              alt="Construction Project"
+              class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-charcoal/30 group-hover:bg-orange/20 transition-colors duration-300"
+            ></div>
+          </div>
+          <div class="relative overflow-hidden rounded-lg shadow-lg group">
+            <img
+              src="../images/about2.jpg"
+              alt="Engineering Team"
+              class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-charcoal/30 group-hover:bg-orange/20 transition-colors duration-300"
+            ></div>
+          </div>
+          <div class="relative overflow-hidden rounded-lg shadow-lg group">
+            <img
+              src="../images/about3.jpg"
+              alt="Innovative Design"
+              class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-charcoal/30 group-hover:bg-orange/20 transition-colors duration-300"
+            ></div>
+          </div>
+          <div class="relative overflow-hidden rounded-lg shadow-lg group">
+            <img
+              src="../images/about4.jpg"
+              alt="Construction Site"
+              class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-charcoal/30 group-hover:bg-orange/20 transition-colors duration-300"
+            ></div>
+          </div>
+        </div>
+
+        <!-- Vision, Mission, Goals, Values -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Vision -->
+          <div
+            class="bg-white/10 backdrop-blur-sm p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-bold font-open-sans text-orange mb-3">
+              Vision
+            </h3>
+            <p class="text-base font-inter text-white">
+              Leading in providing the services of the contracting sector by
+              working professionally and achieving the best achievements in all
+              our fields and services provided to our valued customers, and that
+              Arc Al-Bonian Contracting is a leading Saudi Company in the field
+              of its services, and striving to be one of the advanced pillars of
+              the highest status and the best performance in the field of
+              contracting, glass, and other services we provide.
+            </p>
+          </div>
+          <!-- Mission -->
+          <div
+            class="bg-white/10 backdrop-blur-sm p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-bold font-open-sans text-orange mb-3">
+              Mission
+            </h3>
+            <p class="text-base font-inter text-white">
+              Arc Al-Bonian Contracting seeks to dedicate its efforts to
+              building honest and long-term relationships with its customers and
+              partners and employing the best and latest materials, solutions,
+              and technologies to provide high-quality services that are keen on
+              the satisfaction of all its customers and meet their ambitions
+              with the constant pursuit of continuous development and
+              modernization to serve this great country.
+            </p>
+          </div>
+          <!-- Goals -->
+          <div
+            class="bg-white/10 backdrop-blur-sm p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-bold font-open-sans text-orange mb-3">
+              Our Goals
+            </h3>
+            <ul class="text-base font-inter text-white list-disc list-inside">
+              <li>
+                Quality - Quality always comes high priority and we focus on it
+                as the first aim, and always strive to improve the quality and
+                efficiency of our business.
+              </li>
+              <li>Providing integrated creative solutions in systems.</li>
+              <li>
+                Fast and short delivery work – We seek to provide the best
+                balance between achieving quality and efficiency and speed of
+                implementation.
+              </li>
+              <li>Developing our human and material capabilities.</li>
+            </ul>
+          </div>
+          <!-- Values -->
+          <div
+            class="bg-white/10 backdrop-blur-sm p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-bold font-open-sans text-orange mb-3">
+              Values
+            </h3>
+            <ul class="text-base font-inter text-white list-disc list-inside">
+              <li>Honesty and integrity</li>
+              <li>Quality and providing the best</li>
+              <li>Commitment and fast in the services to our customer</li>
+              <li>Trust and transparency</li>
+              <li>Investing in competencies</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Include JavaScript -->
+    <script src="./main.js"></script>
   </body>
 </html>
