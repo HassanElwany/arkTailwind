@@ -95,7 +95,12 @@
 
           <!-- Hamburger Menu for Mobile -->
           <div class="md:hidden">
-            <button id="menu-toggle" class="focus:outline-none" aria-expanded="false" aria-controls="mobile-menu">
+            <button
+              id="menu-toggle"
+              class="focus:outline-none"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -115,13 +120,38 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden fixed top-[10vh] left-0 right-0 bg-gradient-to-r from-gray-900/95 via-gray-800/95 to-orange-600/85 backdrop-blur-sm p-6 space-y-4 md:hidden transition-all duration-300 ease-in-out transform translate-y-0 shadow-lg">
-          <div class="flex flex-col items-center space-y-4 uppercase font-semibold text-amber-50">
-            <a href="#hero" class="w-full text-center tracking-widest hover:text-orange hover:underline decoration-orange focus:text-orange py-2">Home</a>
-            <a href="#about" class="w-full text-center tracking-widest hover:text-orange hover:underline decoration-orange focus:text-orange py-2">About</a>
-            <a href="#projects" class="w-full text-center tracking-widest hover:text-orange hover:underline decoration-orange focus:text-orange py-2">Projects</a>
-            <a href="#services" class="w-full text-center tracking-widest hover:text-orange hover:underline decoration-orange focus:text-orange py-2">Services</a>
-            <a href="#contact" class="w-full text-center tracking-widest px-4 py-2 text-amber-50 bg-steel border-2 border-steel rounded-2xl shadow-md hover:text-steel hover:bg-amber-50">Contact Us</a>
+        <div
+          id="mobile-menu"
+          class="hidden fixed top-[10vh] left-0 right-0 bg-gradient-to-r from-gray-900/95 via-gray-800/95 to-orange-600/85 backdrop-blur-sm p-6 space-y-4 md:hidden transition-all duration-300 ease-in-out transform translate-y-0 shadow-lg"
+        >
+          <div
+            class="flex flex-col items-center space-y-4 uppercase font-semibold text-amber-50"
+          >
+            <a
+              href="#hero"
+              class="w-full text-center tracking-widest hover:text-orange hover:underline decoration-orange focus:text-orange py-2"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="w-full text-center tracking-widest hover:text-orange hover:underline decoration-orange focus:text-orange py-2"
+              >About</a
+            >
+            <a
+              href="#projects"
+              class="w-full text-center tracking-widest hover:text-orange hover:underline decoration-orange focus:text-orange py-2"
+              >Projects</a
+            >
+            <a
+              href="#services"
+              class="w-full text-center tracking-widest hover:text-orange hover:underline decoration-orange focus:text-orange py-2"
+              >Services</a
+            >
+            <a
+              href="#contact"
+              class="w-full text-center tracking-widest px-4 py-2 text-amber-50 bg-steel border-2 border-steel rounded-2xl shadow-md hover:text-steel hover:bg-amber-50"
+              >Contact Us</a
+            >
           </div>
         </div>
       </nav>
@@ -323,6 +353,1006 @@
         </div>
       </div>
     </section>
+    <!-- Projects Section -->
+    <section
+      id="projects"
+      class="relative py-16 px-6 bg-gradient-to-r from-gray-900 via-gray-800 to-orange-600/90"
+    >
+      <div class="container mx-auto">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+          <h2
+            class="text-4xl md:text-5xl font-bold font-open-sans text-orange mb-4"
+          >
+            Our Projects
+          </h2>
+          <p class="text-lg md:text-xl font-inter text-white max-w-3xl mx-auto">
+            Discover our innovative construction projects that showcase our
+            commitment to quality and excellence in Saudi Arabia.
+          </p>
+        </div>
+
+        <!-- Projects Grid - First Row -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <!-- Project Card 1 -->
+          <div class="relative group overflow-hidden rounded-lg shadow-lg">
+            <!-- Carousel Container -->
+            <div class="project-carousel relative w-full h-[400px]">
+              <div class="carousel-inner relative w-full h-full">
+                <img
+                  src="https://picsum.photos/800/600?random=1"
+                  alt="Project 1"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100"
+                />
+                <img
+                  src="https://picsum.photos/800/600?random=2"
+                  alt="Project 1"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
+                />
+                <img
+                  src="https://picsum.photos/800/600?random=3"
+                  alt="Project 1"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
+                />
+                <img
+                  src="https://picsum.photos/800/600?random=4"
+                  alt="Project 1"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
+                />
+              </div>
+              <!-- Navigation Arrows -->
+              <button
+                class="carousel-prev absolute left-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-gray-900/75 transition-colors"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+              <button
+                class="carousel-next absolute right-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-gray-900/75 transition-colors"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
+            <!-- Text Overlay -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent p-6 flex flex-col justify-end transform translate-y-1/4 group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <h3 class="text-2xl font-bold font-open-sans text-orange mb-2">
+                Luxury Residential Complex
+              </h3>
+              <p
+                class="text-white text-base font-inter opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                A state-of-the-art residential complex featuring modern
+                amenities and sustainable design principles.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="relative group overflow-hidden rounded-lg shadow-lg">
+            <!-- Carousel Container -->
+            <div class="project-carousel relative w-full h-[400px]">
+              <div class="carousel-inner relative w-full h-full">
+                <img
+                  src="https://picsum.photos/800/600?random=5"
+                  alt="Project 2"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100"
+                />
+                <img
+                  src="https://picsum.photos/800/600?random=6"
+                  alt="Project 2"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
+                />
+                <img
+                  src="https://picsum.photos/800/600?random=7"
+                  alt="Project 2"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
+                />
+                <img
+                  src="https://picsum.photos/800/600?random=8"
+                  alt="Project 2"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
+                />
+              </div>
+              <!-- Navigation Arrows -->
+              <button
+                class="carousel-prev absolute left-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-gray-900/75 transition-colors"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+              <button
+                class="carousel-next absolute right-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-gray-900/75 transition-colors"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
+            <!-- Text Overlay -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent p-6 flex flex-col justify-end transform translate-y-1/4 group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <h3 class="text-2xl font-bold font-open-sans text-orange mb-2">
+                Commercial Tower
+              </h3>
+              <p
+                class="text-white text-base font-inter opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                An iconic commercial tower incorporating smart building
+                technology and energy-efficient systems.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="relative group overflow-hidden rounded-lg shadow-lg">
+            <!-- Carousel Container -->
+            <div class="project-carousel relative w-full h-[400px]">
+              <div class="carousel-inner relative w-full h-full">
+                <img
+                  src="https://picsum.photos/800/600?random=9"
+                  alt="Project 3"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100"
+                />
+                <img
+                  src="https://picsum.photos/800/600?random=10"
+                  alt="Project 3"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
+                />
+                <img
+                  src="https://picsum.photos/800/600?random=11"
+                  alt="Project 3"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
+                />
+                <img
+                  src="https://picsum.photos/800/600?random=12"
+                  alt="Project 3"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
+                />
+              </div>
+              <!-- Navigation Arrows -->
+              <button
+                class="carousel-prev absolute left-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-gray-900/75 transition-colors"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+              <button
+                class="carousel-next absolute right-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-gray-900/75 transition-colors"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
+            <!-- Text Overlay -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent p-6 flex flex-col justify-end transform translate-y-1/4 group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <h3 class="text-2xl font-bold font-open-sans text-orange mb-2">
+                Healthcare Facility
+              </h3>
+              <p
+                class="text-white text-base font-inter opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                A modern healthcare facility designed to meet international
+                standards and provide exceptional patient care.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects Grid - Second Row -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Project Card 4 -->
+          <div class="relative group overflow-hidden rounded-lg shadow-lg">
+            <!-- Carousel Container -->
+            <div class="project-carousel relative w-full h-[400px]">
+              <div class="carousel-inner relative w-full h-full">
+                <img
+                  src="https://picsum.photos/800/600?random=13"
+                  alt="Project 4"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100"
+                />
+                <img
+                  src="https://picsum.photos/800/600?random=14"
+                  alt="Project 4"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
+                />
+                <img
+                  src="https://picsum.photos/800/600?random=15"
+                  alt="Project 4"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
+                />
+                <img
+                  src="https://picsum.photos/800/600?random=16"
+                  alt="Project 4"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
+                />
+              </div>
+              <!-- Navigation Arrows -->
+              <button
+                class="carousel-prev absolute left-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-gray-900/75 transition-colors"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+              <button
+                class="carousel-next absolute right-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-gray-900/75 transition-colors"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
+            <!-- Text Overlay -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent p-6 flex flex-col justify-end transform translate-y-1/4 group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <h3 class="text-2xl font-bold font-open-sans text-orange mb-2">
+                Educational Campus
+              </h3>
+              <p
+                class="text-white text-base font-inter opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                A comprehensive educational facility featuring modern
+                classrooms, laboratories, and recreational areas.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project Card 5 -->
+          <div class="relative group overflow-hidden rounded-lg shadow-lg">
+            <!-- Carousel Container -->
+            <div class="project-carousel relative w-full h-[400px]">
+              <div class="carousel-inner relative w-full h-full">
+                <img
+                  src="https://picsum.photos/800/600?random=17"
+                  alt="Project 5"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100"
+                />
+                <img
+                  src="https://picsum.photos/800/600?random=18"
+                  alt="Project 5"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
+                />
+                <img
+                  src="https://picsum.photos/800/600?random=19"
+                  alt="Project 5"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
+                />
+                <img
+                  src="https://picsum.photos/800/600?random=20"
+                  alt="Project 5"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
+                />
+              </div>
+              <!-- Navigation Arrows -->
+              <button
+                class="carousel-prev absolute left-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-gray-900/75 transition-colors"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+              <button
+                class="carousel-next absolute right-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-gray-900/75 transition-colors"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
+            <!-- Text Overlay -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent p-6 flex flex-col justify-end transform translate-y-1/4 group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <h3 class="text-2xl font-bold font-open-sans text-orange mb-2">
+                Sports Complex
+              </h3>
+              <p
+                class="text-white text-base font-inter opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                A multi-purpose sports facility with indoor and outdoor venues
+                for various sporting activities.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project Card 6 -->
+          <div class="relative group overflow-hidden rounded-lg shadow-lg">
+            <!-- Carousel Container -->
+            <div class="project-carousel relative w-full h-[400px]">
+              <div class="carousel-inner relative w-full h-full">
+                <img
+                  src="https://picsum.photos/800/600?random=21"
+                  alt="Project 6"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100"
+                />
+                <img
+                  src="https://picsum.photos/800/600?random=22"
+                  alt="Project 6"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
+                />
+                <img
+                  src="https://picsum.photos/800/600?random=23"
+                  alt="Project 6"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
+                />
+                <img
+                  src="https://picsum.photos/800/600?random=24"
+                  alt="Project 6"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
+                />
+              </div>
+              <!-- Navigation Arrows -->
+              <button
+                class="carousel-prev absolute left-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-gray-900/75 transition-colors"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+              <button
+                class="carousel-next absolute right-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-gray-900/75 transition-colors"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
+            <!-- Text Overlay -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent p-6 flex flex-col justify-end transform translate-y-1/4 group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <h3 class="text-2xl font-bold font-open-sans text-orange mb-2">
+                Industrial Facility
+              </h3>
+              <p
+                class="text-white text-base font-inter opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                A modern industrial facility designed with advanced
+                manufacturing capabilities and sustainable practices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section
+      id="services"
+      class="relative py-16 px-6 bg-gradient-to-r from-orange-600/90 via-gray-800 to-gray-900"
+    >
+      <div class="container mx-auto">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+          <h2
+            class="text-4xl md:text-5xl font-bold font-open-sans text-orange mb-4"
+          >
+            Our Services
+          </h2>
+          <p class="text-lg md:text-xl font-inter text-white max-w-3xl mx-auto">
+            We offer comprehensive construction and contracting services with a
+            focus on quality, innovation, and client satisfaction.
+          </p>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service Card 1 -->
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+          >
+            <div
+              class="flex items-center justify-center w-16 h-16 bg-orange rounded-full mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold font-open-sans text-orange mb-4">
+              Building Construction
+            </h3>
+            <p class="text-white font-inter">
+              From residential complexes to commercial towers, we deliver
+              high-quality construction projects with attention to detail and
+              modern building techniques.
+            </p>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+          >
+            <div
+              class="flex items-center justify-center w-16 h-16 bg-orange rounded-full mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold font-open-sans text-orange mb-4">
+              Project Management
+            </h3>
+            <p class="text-white font-inter">
+              Expert project management services ensuring timely delivery, cost
+              efficiency, and the highest quality standards throughout the
+              construction process.
+            </p>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+          >
+            <div
+              class="flex items-center justify-center w-16 h-16 bg-orange rounded-full mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold font-open-sans text-orange mb-4">
+              Design & Engineering
+            </h3>
+            <p class="text-white font-inter">
+              Innovative architectural design and engineering solutions that
+              combine aesthetics with functionality and sustainability.
+            </p>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+          >
+            <div
+              class="flex items-center justify-center w-16 h-16 bg-orange rounded-full mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"
+                />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold font-open-sans text-orange mb-4">
+              Interior Finishing
+            </h3>
+            <p class="text-white font-inter">
+              High-end interior finishing services with premium materials and
+              expert craftsmanship for both residential and commercial projects.
+            </p>
+          </div>
+
+          <!-- Service Card 5 -->
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+          >
+            <div
+              class="flex items-center justify-center w-16 h-16 bg-orange rounded-full mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold font-open-sans text-orange mb-4">
+              MEP Services
+            </h3>
+            <p class="text-white font-inter">
+              Comprehensive mechanical, electrical, and plumbing services with a
+              focus on energy efficiency and modern technology integration.
+            </p>
+          </div>
+
+          <!-- Service Card 6 -->
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+          >
+            <div
+              class="flex items-center justify-center w-16 h-16 bg-orange rounded-full mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold font-open-sans text-orange mb-4">
+              Infrastructure Development
+            </h3>
+            <p class="text-white font-inter">
+              Large-scale infrastructure projects including roads, bridges, and
+              utilities with a commitment to sustainable development.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="relative py-16 px-6 bg-gradient-to-r from-gray-900 via-gray-800 to-orange-600/90"
+    >
+      <div class="container mx-auto">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+          <h2
+            class="text-4xl md:text-5xl font-bold font-open-sans text-orange mb-4"
+          >
+            Contact Us
+          </h2>
+          <p class="text-lg md:text-xl font-inter text-white max-w-3xl mx-auto">
+            Get in touch with us to discuss your next project or learn more
+            about our services.
+          </p>
+        </div>
+
+        <!-- Contact Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- Google Maps -->
+          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-8 shadow-lg overflow-hidden">
+            <div class="relative w-full h-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463880.6074173834!2d46.54670169999999!3d24.725554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1624451234567!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="rounded-lg"
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="space-y-8">
+            <!-- Company Info -->
+            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-8 shadow-lg">
+              <h3 class="text-2xl font-bold font-open-sans text-orange mb-6">
+                Office Location
+              </h3>
+              <div class="space-y-4">
+                <div class="flex items-start space-x-4">
+                  <svg
+                    class="w-6 h-6 text-orange mt-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                  <div>
+                    <h4 class="text-white font-bold mb-1">Address</h4>
+                    <p class="text-gray-300">
+                      123 Business District<br />Riyadh, Saudi Arabia
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                  <svg
+                    class="w-6 h-6 text-orange mt-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <div>
+                    <h4 class="text-white font-bold mb-1">Email</h4>
+                    <a
+                      href="mailto:info@arcalbonian.com"
+                      class="text-gray-300 hover:text-orange transition-colors"
+                      >info@arcalbonian.com</a
+                    >
+                  </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                  <svg
+                    class="w-6 h-6 text-orange mt-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg>
+                  <div>
+                    <h4 class="text-white font-bold mb-1">Phone</h4>
+                    <a
+                      href="tel:+966123456789"
+                      class="text-gray-300 hover:text-orange transition-colors"
+                      >+966 12 345 6789</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Business Hours -->
+            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-8 shadow-lg">
+              <h3 class="text-2xl font-bold font-open-sans text-orange mb-6">
+                Business Hours
+              </h3>
+              <div class="space-y-3">
+                <div class="flex justify-between">
+                  <span class="text-white">Sunday - Thursday</span>
+                  <span class="text-gray-300">8:00 AM - 5:00 PM</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-white">Friday</span>
+                  <span class="text-gray-300">Closed</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-white">Saturday</span>
+                  <span class="text-gray-300">9:00 AM - 2:00 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+          <!-- Company Info -->
+          <div class="space-y-4">
+            <img
+              src="../images/logo arc.svg"
+              alt="Arc Al Bonian Logo"
+              class="h-16 w-16"
+            />
+            <h4 class="text-xl font-bold text-orange">Arc Al Bonian</h4>
+            <p class="text-gray-400">
+              Leading the future of construction with innovation and excellence.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-xl font-bold text-orange mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-400 hover:text-orange transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-400 hover:text-orange transition-colors"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  class="text-gray-400 hover:text-orange transition-colors"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-400 hover:text-orange transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h4 class="text-xl font-bold text-orange mb-4">Services</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-orange transition-colors"
+                  >Building Construction</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-orange transition-colors"
+                  >Project Management</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-orange transition-colors"
+                  >Interior Finishing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-orange transition-colors"
+                  >MEP Services</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Media -->
+          <div>
+            <h4 class="text-xl font-bold text-orange mb-4">Follow Us</h4>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-orange transition-colors"
+              >
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-orange transition-colors"
+              >
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-orange transition-colors"
+              >
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.261-2.148-.558-2.913-.306-.789-.717-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-orange transition-colors"
+              >
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="border-t border-gray-800 mt-12 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 text-sm">
+              © 2024 Arc Al Bonian. All rights reserved.
+            </p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+              <a href="#" class="text-gray-400 hover:text-orange text-sm"
+                >Privacy Policy</a
+              >
+              <a href="#" class="text-gray-400 hover:text-orange text-sm"
+                >Terms of Service</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <!-- Include JavaScript -->
     <script src="./main.js"></script>
   </body>
