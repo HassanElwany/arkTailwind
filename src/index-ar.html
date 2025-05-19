@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="ar" dir="rtl" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,26 +7,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <title>
-      Arc Al Bonian Contracting - Leading Saudi Construction Company
-    </title>
+    <title>آرك البنيان للمقاولات - شركة إنشاءات سعودية رائدة</title>
     <meta
       name="description"
-      content="Arc Al-Bonian General Contracting - A leading Saudi construction company providing quality solutions with advanced engineering techniques and creative designs."
+      content="آرك البنيان للمقاولات العامة - شركة إنشاءات سعودية رائدة توفر حلولًا عالية الجودة باستخدام تقنيات هندسية متقدمة وتصاميم إبداعية."
     />
     <meta
       name="keywords"
-      content="construction company saudi arabia, contracting services, engineering solutions, construction development, saudi contractors"
+      content="شركة إنشاءات المملكة العربية السعودية، خدمات المقاولات، الحلول الهندسية، تطوير البناء، المقاولون السعوديون"
     />
     <link href="./output.css" rel="stylesheet" />
     <!-- Open Graph tags for social sharing -->
-    <meta property="og:title" content="Arc Al Bonian Contracting" />
+    <meta property="og:title" content="آرك البنيان للمقاولات" />
     <meta
       property="og:description"
-      content="Leading Saudi construction company providing quality solutions with advanced engineering techniques."
+      content="شركة إنشاءات سعودية رائدة توفر حلولًا عالية الجودة باستخدام تقنيات هندسية متقدمة."
     />
     <meta property="og:type" content="website" />
     <!-- Schema.org markup for Google -->
@@ -34,69 +32,76 @@
       {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "Arc Al Bonian Contracting",
-        "description": "Leading Saudi construction company providing quality solutions with advanced engineering techniques.",
+        "name": "آرك البنيان للمقاولات",
+        "description": "شركة إنشاءات سعودية رائدة توفر حلولًا عالية الجودة باستخدام تقنيات هندسية متقدمة.",
         "url": "https://arcalbonian.com",
-        "areaServed": "Saudi Arabia",
-        "serviceType": ["Construction", "Contracting", "Engineering Solutions"]
+        "areaServed": "المملكة العربية السعودية",
+        "serviceType": ["البناء", "المقاولات", "الحلول الهندسية"]
       }
     </script>
+    <style>
+      body {
+        font-family: "Noto Sans Arabic", sans-serif;
+      }
+    </style>
   </head>
   <body>
     <!-- Header/Navigation -->
     <header
-      class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-gray-900/95 via-gray-800/95 to-orange-600/85 backdrop-blur-sm h-[10vh]"
+      class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-l from-gray-900/95 via-gray-800/95 to-orange-600/85 backdrop-blur-sm h-[10vh]"
     >
       <nav class="container relative mx-auto h-full flex items-center px-6">
         <!-- Flex Container for nav items  -->
-        <div class="flex items-center justify-between space-x-4 w-full">
+        <div
+          class="flex items-center justify-between space-x-reverse space-x-4 w-full"
+        >
           <!-- Logo -->
           <div class="flex items-center z-30">
             <img
               src="../images/logo arc.svg"
-              alt="Arc Al Bonian Contracting Logo"
+              alt="شعار آرك البنيان للمقاولات"
               class="h-16 w-16"
             />
-            <h1 class="text-2xl font-bold text-amber-50">
-              AR<span class="text-orange">C</span> Al Bonian
+            <h1 class="text-2xl font-bold text-amber-50 mr-2">
+              <span class="text-orange">آرك</span> البنيان
             </h1>
           </div>
 
           <!-- Navigation Links -->
           <div
-            class="hidden md:flex items-center space-x-8 uppercase font-semibold text-amber-50"
+            class="hidden md:flex items-center space-x-reverse space-x-8 uppercase font-semibold text-amber-50"
           >
             <a
               href="#hero"
               class="tracking-widest hover:text-orange hover:underline decoration-orange focus:text-orange"
-              >Home</a
+              >الرئيسية</a
             >
             <a
               href="#about"
               class="tracking-widest hover:text-orange hover:underline decoration-orange focus:text-orange"
-              >About</a
+              >من نحن</a
             >
             <a
               href="#projects"
               class="tracking-widest hover:text-orange hover:underline decoration-orange focus:text-orange"
-              >Projects</a
+              >المشاريع</a
             >
             <a
               href="#services"
               class="tracking-widest hover:text-orange hover:underline decoration-orange focus:text-orange"
-              >Services</a
+              >الخدمات</a
             >
             <a
               href="#contact"
               class="tracking-widest px-4 py-2 text-amber-50 bg-steel border-2 border-steel rounded-2xl shadow-md hover:text-steel hover:bg-amber-50"
-              >Contact Us</a
+              >تواصل معنا</a
             >
             <a
-              href="./index-ar.html"
-              class="tracking-widest px-4 py-2 text-amber-50 bg-green-700 border-2 border-green-700 rounded-2xl shadow-md hover:text-green-700 hover:bg-amber-50 flex items-center"
+              href="./index.html"
+              class="tracking-widest px-4 py-2 text-amber-50 bg-blue-600 border-2 border-blue-600 rounded-2xl shadow-md hover:text-blue-600 hover:bg-amber-50 flex items-center mr-4"
             >
-              <span class="mx-1">العربية</span>
-              <span class="text-xl">🇸🇦</span>
+              <span class="mx-1">English</span>
+              <span class="text-xl">🇺🇸</span>
             </a>
           </div>
 
@@ -129,7 +134,7 @@
         <!-- Mobile Menu -->
         <div
           id="mobile-menu"
-          class="hidden fixed top-[10vh] left-0 right-0 bg-gradient-to-r from-gray-900/95 via-gray-800/95 to-orange-600/85 backdrop-blur-sm p-6 space-y-4 md:hidden transition-all duration-300 ease-in-out transform translate-y-0 shadow-lg"
+          class="hidden fixed top-[10vh] left-0 right-0 bg-gradient-to-l from-gray-900/95 via-gray-800/95 to-orange-600/85 backdrop-blur-sm p-6 space-y-4 md:hidden transition-all duration-300 ease-in-out transform translate-y-0 shadow-lg"
         >
           <div
             class="flex flex-col items-center space-y-4 uppercase font-semibold text-amber-50"
@@ -137,34 +142,34 @@
             <a
               href="#hero"
               class="w-full text-center tracking-widest hover:text-orange hover:underline decoration-orange focus:text-orange py-2"
-              >Home</a
+              >الرئيسية</a
             >
             <a
               href="#about"
               class="w-full text-center tracking-widest hover:text-orange hover:underline decoration-orange focus:text-orange py-2"
-              >About</a
+              >من نحن</a
             >
             <a
               href="#projects"
               class="w-full text-center tracking-widest hover:text-orange hover:underline decoration-orange focus:text-orange py-2"
-              >Projects</a
+              >المشاريع</a
             >
             <a
               href="#services"
               class="w-full text-center tracking-widest hover:text-orange hover:underline decoration-orange focus:text-orange py-2"
-              >Services</a
+              >الخدمات</a
             >
             <a
               href="#contact"
               class="w-full text-center tracking-widest px-4 py-2 text-amber-50 bg-steel border-2 border-steel rounded-2xl shadow-md hover:text-steel hover:bg-amber-50"
-              >Contact Us</a
+              >تواصل معنا</a
             >
             <a
-              href="./index-ar.html"
-              class="w-full text-center tracking-widest px-4 py-2 text-amber-50 bg-green-700 border-2 border-green-700 rounded-2xl shadow-md hover:text-green-700 hover:bg-amber-50 flex items-center justify-center"
+              href="./index.html"
+              class="w-full text-center tracking-widest px-4 py-2 text-amber-50 bg-blue-600 border-2 border-blue-600 rounded-2xl shadow-md hover:text-blue-600 hover:bg-amber-50 flex items-center justify-center mt-2"
             >
-              <span class="mx-1">العربية</span>
-              <span class="text-xl">🇸🇦</span>
+              <span class="mx-1">English</span>
+              <span class="text-xl">🇺🇸</span>
             </a>
           </div>
         </div>
@@ -193,7 +198,7 @@
         preload="auto"
       >
         <source src="../images/video_preview_h264.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+        متصفحك لا يدعم مشغل الفيديو.
       </video>
 
       <!-- Overlay -->
@@ -203,47 +208,38 @@
       <div
         class="relative z-10 flex flex-col items-center justify-center h-full text-center text-amber-50 px-6"
       >
-        <h1
-          class="text-4xl md:text-5xl lg:text-6xl font-bold font-open-sans mb-4"
-        >
-          Building the Future of Saudi Arabia
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+          نبني مستقبل المملكة العربية السعودية
         </h1>
-        <p class="text-lg md:text-xl lg:text-2xl font-inter max-w-2xl">
-          Arc Al Bonian Contracting delivers innovative construction solutions
-          with precision, quality, and advanced engineering techniques.
+        <p class="text-lg md:text-xl lg:text-2xl max-w-2xl">
+          آرك البنيان للمقاولات تقدم حلول بناء مبتكرة بدقة وجودة عالية وتقنيات
+          هندسية متقدمة.
         </p>
       </div>
     </section>
     <!-- About Section -->
     <section
       id="about"
-      class="relative py-16 px-6 bg-gradient-to-r from-charcoal via-slate to-orange/90 text-white"
+      class="relative py-16 px-6 bg-gradient-to-l from-charcoal via-slate to-orange/90 text-white"
     >
       <div class="container mx-auto">
         <!-- Who Are We -->
         <div class="text-center mb-12">
-          <h2
-            class="text-4xl md:text-5xl font-bold font-open-sans text-orange mb-4"
-          >
-            Who Are We
+          <h2 class="text-4xl md:text-5xl font-bold text-orange mb-4">
+            من نحن
           </h2>
-          <p class="text-lg md:text-xl font-inter max-w-3xl mx-auto">
-            Arc Al-Bonian General Contracting was established with its great
-            dream and endless limits in providing quality solutions and using
-            the latest technology methods, advanced engineering techniques, and
-            the most creative designs to enter the field of construction and
-            development from its widest doors with its competitive advantages.
-            Arc Al-Bonian believes that the whole world is moving at a rapid
-            pace to a tremendous technological development and it must keep pace
-            with this development and contribute effectively to serving our
-            community and providing the best services with the highest standards
-            of quality and professionalism because the entity has specialized
-            technical and engineering cadres with long experience and trained
-            labor according to scientific foundations and high efficiency,
-            taking into account the highest safety standards to contribute
-            seriously and effectively to construction and development, as well
-            as aim to build a well-known name and a brilliant brand in its
-            field.
+          <p class="text-lg md:text-xl max-w-3xl mx-auto">
+            تأسست آرك البنيان للمقاولات العامة بحلمها العظيم وحدودها التي لا
+            تنتهي في تقديم حلول ذات جودة عالية واستخدام أحدث الأساليب
+            التكنولوجية والتقنيات الهندسية المتقدمة والتصاميم الأكثر إبداعًا
+            للدخول إلى مجال البناء والتطوير من أوسع أبوابها بميزاتها التنافسية.
+            تؤمن آرك البنيان بأن العالم بأسره يسير بخطى سريعة نحو تطور تكنولوجي
+            هائل ويجب عليها مواكبة هذا التطور والمساهمة بفعالية في خدمة مجتمعنا
+            وتقديم أفضل الخدمات بأعلى معايير الجودة والاحترافية لأن الكيان يمتلك
+            كوادر تقنية وهندسية متخصصة ذات خبرة طويلة وعمالة مدربة وفق أسس علمية
+            وكفاءة عالية مع مراعاة أعلى معايير السلامة للمساهمة بجدية وفعالية في
+            البناء والتطوير، وكذلك تهدف إلى بناء اسم معروف وعلامة تجارية لامعة
+            في مجالها.
           </p>
         </div>
 
@@ -252,7 +248,7 @@
           <div class="relative overflow-hidden rounded-lg shadow-lg group">
             <img
               src="../images/about1.jpg"
-              alt="Construction Project"
+              alt="مشروع إنشائي"
               class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
             />
             <div
@@ -262,7 +258,7 @@
           <div class="relative overflow-hidden rounded-lg shadow-lg group">
             <img
               src="../images/about2.jpg"
-              alt="Engineering Team"
+              alt="فريق هندسي"
               class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
             />
             <div
@@ -272,7 +268,7 @@
           <div class="relative overflow-hidden rounded-lg shadow-lg group">
             <img
               src="../images/about3.jpg"
-              alt="Innovative Design"
+              alt="تصميم مبتكر"
               class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
             />
             <div
@@ -282,7 +278,7 @@
           <div class="relative overflow-hidden rounded-lg shadow-lg group">
             <img
               src="../images/about4.jpg"
-              alt="Construction Site"
+              alt="موقع إنشاءات"
               class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
             />
             <div
@@ -297,71 +293,58 @@
           <div
             class="bg-white/10 backdrop-blur-sm p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
           >
-            <h3 class="text-2xl font-bold font-open-sans text-orange mb-3">
-              Vision
-            </h3>
-            <p class="text-base font-inter text-white">
-              Leading in providing the services of the contracting sector by
-              working professionally and achieving the best achievements in all
-              our fields and services provided to our valued customers, and that
-              Arc Al-Bonian Contracting is a leading Saudi Company in the field
-              of its services, and striving to be one of the advanced pillars of
-              the highest status and the best performance in the field of
-              contracting, glass, and other services we provide.
+            <h3 class="text-2xl font-bold text-orange mb-3">رؤيتنا</h3>
+            <p class="text-base text-white">
+              الريادة في تقديم خدمات قطاع المقاولات من خلال العمل باحترافية
+              وتحقيق أفضل الإنجازات في جميع مجالاتنا وخدماتنا المقدمة لعملائنا
+              الكرام، وأن تكون آرك البنيان للمقاولات شركة سعودية رائدة في مجال
+              خدماتها، والسعي لتكون واحدة من الركائز المتقدمة ذات المكانة
+              العالية والأداء الأفضل في مجال المقاولات والزجاج والخدمات الأخرى
+              التي نقدمها.
             </p>
           </div>
           <!-- Mission -->
           <div
             class="bg-white/10 backdrop-blur-sm p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
           >
-            <h3 class="text-2xl font-bold font-open-sans text-orange mb-3">
-              Mission
-            </h3>
-            <p class="text-base font-inter text-white">
-              Arc Al-Bonian Contracting seeks to dedicate its efforts to
-              building honest and long-term relationships with its customers and
-              partners and employing the best and latest materials, solutions,
-              and technologies to provide high-quality services that are keen on
-              the satisfaction of all its customers and meet their ambitions
-              with the constant pursuit of continuous development and
-              modernization to serve this great country.
+            <h3 class="text-2xl font-bold text-orange mb-3">رسالتنا</h3>
+            <p class="text-base text-white">
+              تسعى آرك البنيان للمقاولات إلى تكريس جهودها لبناء علاقات صادقة
+              وطويلة الأمد مع عملائها وشركائها وتوظيف أفضل وأحدث المواد والحلول
+              والتقنيات لتقديم خدمات عالية الجودة تحرص على رضا جميع عملائها
+              وتلبي طموحاتهم مع السعي الدائم للتطوير والتحديث المستمر لخدمة هذا
+              البلد العظيم.
             </p>
           </div>
           <!-- Goals -->
           <div
             class="bg-white/10 backdrop-blur-sm p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
           >
-            <h3 class="text-2xl font-bold font-open-sans text-orange mb-3">
-              Our Goals
-            </h3>
-            <ul class="text-base font-inter text-white list-disc list-inside">
+            <h3 class="text-2xl font-bold text-orange mb-3">أهدافنا</h3>
+            <ul class="text-base text-white list-disc list-inside">
               <li>
-                Quality - Quality always comes high priority and we focus on it
-                as the first aim, and always strive to improve the quality and
-                efficiency of our business.
+                الجودة - تأتي الجودة دائمًا ذات أولوية عالية ونركز عليها كهدف
+                أول، ونسعى دائمًا لتحسين جودة وكفاءة أعمالنا.
               </li>
-              <li>Providing integrated creative solutions in systems.</li>
+              <li>تقديم حلول إبداعية متكاملة في الأنظمة.</li>
               <li>
-                Fast and short delivery work – We seek to provide the best
-                balance between achieving quality and efficiency and speed of
-                implementation.
+                عمل سريع وقصير المدة - نسعى لتوفير أفضل توازن بين تحقيق الجودة
+                والكفاءة وسرعة التنفيذ.
               </li>
-              <li>Developing our human and material capabilities.</li>
+              <li>تطوير قدراتنا البشرية والمادية.</li>
             </ul>
           </div>
           <!-- Values -->
           <div
             class="bg-white/10 backdrop-blur-sm p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
           >
-            <h3 class="text-2xl font-bold font-open-sans text-orange mb-3">
-              Values
-            </h3>
-            <ul class="text-base font-inter text-white list-disc list-inside">
-              <li>Honesty and integrity</li>
-              <li>Quality and providing the best</li>
-              <li>Commitment and fast in the services to our customer</li>
-              <li>Trust and transparency</li>
-              <li>Investing in competencies</li>
+            <h3 class="text-2xl font-bold text-orange mb-3">قيمنا</h3>
+            <ul class="text-base text-white list-disc list-inside">
+              <li>الصدق والنزاهة</li>
+              <li>الجودة وتقديم الأفضل</li>
+              <li>الالتزام والسرعة في تقديم الخدمات لعملائنا</li>
+              <li>الثقة والشفافية</li>
+              <li>الاستثمار في الكفاءات</li>
             </ul>
           </div>
         </div>
@@ -370,19 +353,17 @@
     <!-- Projects Section -->
     <section
       id="projects"
-      class="relative py-16 px-6 bg-gradient-to-r from-gray-900 via-gray-800 to-orange-600/90"
+      class="relative py-16 px-6 bg-gradient-to-l from-gray-900 via-gray-800 to-orange-600/90"
     >
       <div class="container mx-auto">
         <!-- Section Header -->
         <div class="text-center mb-12">
-          <h2
-            class="text-4xl md:text-5xl font-bold font-open-sans text-orange mb-4"
-          >
-            Our Projects
+          <h2 class="text-4xl md:text-5xl font-bold text-orange mb-4">
+            مشاريعنا
           </h2>
-          <p class="text-lg md:text-xl font-inter text-white max-w-3xl mx-auto">
-            Discover our innovative construction projects that showcase our
-            commitment to quality and excellence in Saudi Arabia.
+          <p class="text-lg md:text-xl text-white max-w-3xl mx-auto">
+            اكتشف مشاريع البناء المبتكرة التي تعكس التزامنا بالجودة والتميز في
+            المملكة العربية السعودية.
           </p>
         </div>
 
@@ -395,22 +376,22 @@
               <div class="carousel-inner relative w-full h-full">
                 <img
                   src="https://picsum.photos/800/600?random=1"
-                  alt="Project 1"
+                  alt="مشروع 1"
                   class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100"
                 />
                 <img
                   src="https://picsum.photos/800/600?random=2"
-                  alt="Project 1"
+                  alt="مشروع 1"
                   class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
                 />
                 <img
                   src="https://picsum.photos/800/600?random=3"
-                  alt="Project 1"
+                  alt="مشروع 1"
                   class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
                 />
                 <img
                   src="https://picsum.photos/800/600?random=4"
-                  alt="Project 1"
+                  alt="مشروع 1"
                   class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
                 />
               </div>
@@ -419,7 +400,7 @@
                 class="carousel-prev absolute left-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-gray-900/75 transition-colors"
               >
                 <svg
-                  class="w-6 h-6"
+                  class="w-6 h-6 scale-x-[-1]"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -436,7 +417,7 @@
                 class="carousel-next absolute right-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-gray-900/75 transition-colors"
               >
                 <svg
-                  class="w-6 h-6"
+                  class="w-6 h-6 scale-x-[-1]"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -454,14 +435,13 @@
             <div
               class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent p-6 flex flex-col justify-end transform translate-y-1/4 group-hover:translate-y-0 transition-transform duration-300"
             >
-              <h3 class="text-2xl font-bold font-open-sans text-orange mb-2">
-                Luxury Residential Complex
+              <h3 class="text-2xl font-bold text-orange mb-2">
+                مجمع سكني فاخر
               </h3>
               <p
-                class="text-white text-base font-inter opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                class="text-white text-base opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               >
-                A state-of-the-art residential complex featuring modern
-                amenities and sustainable design principles.
+                مجمع سكني حديث يضم وسائل راحة عصرية ومبادئ تصميم مستدامة.
               </p>
             </div>
           </div>
@@ -473,22 +453,22 @@
               <div class="carousel-inner relative w-full h-full">
                 <img
                   src="https://picsum.photos/800/600?random=5"
-                  alt="Project 2"
+                  alt="مشروع 2"
                   class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100"
                 />
                 <img
                   src="https://picsum.photos/800/600?random=6"
-                  alt="Project 2"
+                  alt="مشروع 2"
                   class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
                 />
                 <img
                   src="https://picsum.photos/800/600?random=7"
-                  alt="Project 2"
+                  alt="مشروع 2"
                   class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
                 />
                 <img
                   src="https://picsum.photos/800/600?random=8"
-                  alt="Project 2"
+                  alt="مشروع 2"
                   class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
                 />
               </div>
@@ -497,7 +477,7 @@
                 class="carousel-prev absolute left-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-gray-900/75 transition-colors"
               >
                 <svg
-                  class="w-6 h-6"
+                  class="w-6 h-6 scale-x-[-1]"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -514,7 +494,7 @@
                 class="carousel-next absolute right-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-gray-900/75 transition-colors"
               >
                 <svg
-                  class="w-6 h-6"
+                  class="w-6 h-6 scale-x-[-1]"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -532,14 +512,12 @@
             <div
               class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent p-6 flex flex-col justify-end transform translate-y-1/4 group-hover:translate-y-0 transition-transform duration-300"
             >
-              <h3 class="text-2xl font-bold font-open-sans text-orange mb-2">
-                Commercial Tower
-              </h3>
+              <h3 class="text-2xl font-bold text-orange mb-2">برج تجاري</h3>
               <p
-                class="text-white text-base font-inter opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                class="text-white text-base opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               >
-                An iconic commercial tower incorporating smart building
-                technology and energy-efficient systems.
+                برج تجاري مميز يتضمن تكنولوجيا المباني الذكية وأنظمة موفرة
+                للطاقة.
               </p>
             </div>
           </div>
@@ -551,22 +529,22 @@
               <div class="carousel-inner relative w-full h-full">
                 <img
                   src="https://picsum.photos/800/600?random=9"
-                  alt="Project 3"
+                  alt="مشروع 3"
                   class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100"
                 />
                 <img
                   src="https://picsum.photos/800/600?random=10"
-                  alt="Project 3"
+                  alt="مشروع 3"
                   class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
                 />
                 <img
                   src="https://picsum.photos/800/600?random=11"
-                  alt="Project 3"
+                  alt="مشروع 3"
                   class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
                 />
                 <img
                   src="https://picsum.photos/800/600?random=12"
-                  alt="Project 3"
+                  alt="مشروع 3"
                   class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
                 />
               </div>
@@ -575,7 +553,7 @@
                 class="carousel-prev absolute left-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-gray-900/75 transition-colors"
               >
                 <svg
-                  class="w-6 h-6"
+                  class="w-6 h-6 scale-x-[-1]"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -592,7 +570,7 @@
                 class="carousel-next absolute right-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-gray-900/75 transition-colors"
               >
                 <svg
-                  class="w-6 h-6"
+                  class="w-6 h-6 scale-x-[-1]"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -610,14 +588,14 @@
             <div
               class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent p-6 flex flex-col justify-end transform translate-y-1/4 group-hover:translate-y-0 transition-transform duration-300"
             >
-              <h3 class="text-2xl font-bold font-open-sans text-orange mb-2">
-                Healthcare Facility
+              <h3 class="text-2xl font-bold text-orange mb-2">
+                منشأة رعاية صحية
               </h3>
               <p
-                class="text-white text-base font-inter opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                class="text-white text-base opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               >
-                A modern healthcare facility designed to meet international
-                standards and provide exceptional patient care.
+                منشأة رعاية صحية حديثة مصممة لتلبية المعايير الدولية وتوفير
+                رعاية استثنائية للمرضى.
               </p>
             </div>
           </div>
@@ -632,22 +610,22 @@
               <div class="carousel-inner relative w-full h-full">
                 <img
                   src="https://picsum.photos/800/600?random=13"
-                  alt="Project 4"
+                  alt="مشروع 4"
                   class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100"
                 />
                 <img
                   src="https://picsum.photos/800/600?random=14"
-                  alt="Project 4"
+                  alt="مشروع 4"
                   class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
                 />
                 <img
                   src="https://picsum.photos/800/600?random=15"
-                  alt="Project 4"
+                  alt="مشروع 4"
                   class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
                 />
                 <img
                   src="https://picsum.photos/800/600?random=16"
-                  alt="Project 4"
+                  alt="مشروع 4"
                   class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
                 />
               </div>
@@ -656,7 +634,7 @@
                 class="carousel-prev absolute left-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-gray-900/75 transition-colors"
               >
                 <svg
-                  class="w-6 h-6"
+                  class="w-6 h-6 scale-x-[-1]"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -673,7 +651,7 @@
                 class="carousel-next absolute right-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-gray-900/75 transition-colors"
               >
                 <svg
-                  class="w-6 h-6"
+                  class="w-6 h-6 scale-x-[-1]"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -691,14 +669,12 @@
             <div
               class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent p-6 flex flex-col justify-end transform translate-y-1/4 group-hover:translate-y-0 transition-transform duration-300"
             >
-              <h3 class="text-2xl font-bold font-open-sans text-orange mb-2">
-                Educational Campus
-              </h3>
+              <h3 class="text-2xl font-bold text-orange mb-2">حرم تعليمي</h3>
               <p
-                class="text-white text-base font-inter opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                class="text-white text-base opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               >
-                A comprehensive educational facility featuring modern
-                classrooms, laboratories, and recreational areas.
+                منشأة تعليمية شاملة تضم فصول دراسية حديثة ومختبرات ومناطق
+                ترفيهية.
               </p>
             </div>
           </div>
@@ -710,22 +686,22 @@
               <div class="carousel-inner relative w-full h-full">
                 <img
                   src="https://picsum.photos/800/600?random=17"
-                  alt="Project 5"
+                  alt="مشروع 5"
                   class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100"
                 />
                 <img
                   src="https://picsum.photos/800/600?random=18"
-                  alt="Project 5"
+                  alt="مشروع 5"
                   class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
                 />
                 <img
                   src="https://picsum.photos/800/600?random=19"
-                  alt="Project 5"
+                  alt="مشروع 5"
                   class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
                 />
                 <img
                   src="https://picsum.photos/800/600?random=20"
-                  alt="Project 5"
+                  alt="مشروع 5"
                   class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
                 />
               </div>
@@ -734,7 +710,7 @@
                 class="carousel-prev absolute left-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-gray-900/75 transition-colors"
               >
                 <svg
-                  class="w-6 h-6"
+                  class="w-6 h-6 scale-x-[-1]"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -751,7 +727,7 @@
                 class="carousel-next absolute right-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-gray-900/75 transition-colors"
               >
                 <svg
-                  class="w-6 h-6"
+                  class="w-6 h-6 scale-x-[-1]"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -769,14 +745,12 @@
             <div
               class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent p-6 flex flex-col justify-end transform translate-y-1/4 group-hover:translate-y-0 transition-transform duration-300"
             >
-              <h3 class="text-2xl font-bold font-open-sans text-orange mb-2">
-                Sports Complex
-              </h3>
+              <h3 class="text-2xl font-bold text-orange mb-2">مجمع رياضي</h3>
               <p
-                class="text-white text-base font-inter opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                class="text-white text-base opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               >
-                A multi-purpose sports facility with indoor and outdoor venues
-                for various sporting activities.
+                منشأة رياضية متعددة الأغراض تضم مرافق داخلية وخارجية لمختلف
+                الأنشطة الرياضية.
               </p>
             </div>
           </div>
@@ -788,22 +762,22 @@
               <div class="carousel-inner relative w-full h-full">
                 <img
                   src="https://picsum.photos/800/600?random=21"
-                  alt="Project 6"
+                  alt="مشروع 6"
                   class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100"
                 />
                 <img
                   src="https://picsum.photos/800/600?random=22"
-                  alt="Project 6"
+                  alt="مشروع 6"
                   class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
                 />
                 <img
                   src="https://picsum.photos/800/600?random=23"
-                  alt="Project 6"
+                  alt="مشروع 6"
                   class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
                 />
                 <img
                   src="https://picsum.photos/800/600?random=24"
-                  alt="Project 6"
+                  alt="مشروع 6"
                   class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0"
                 />
               </div>
@@ -812,7 +786,7 @@
                 class="carousel-prev absolute left-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-gray-900/75 transition-colors"
               >
                 <svg
-                  class="w-6 h-6"
+                  class="w-6 h-6 scale-x-[-1]"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -829,7 +803,7 @@
                 class="carousel-next absolute right-4 top-1/2 -translate-y-1/2 bg-gray-900/50 text-white p-2 rounded-full hover:bg-gray-900/75 transition-colors"
               >
                 <svg
-                  class="w-6 h-6"
+                  class="w-6 h-6 scale-x-[-1]"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -847,36 +821,32 @@
             <div
               class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent p-6 flex flex-col justify-end transform translate-y-1/4 group-hover:translate-y-0 transition-transform duration-300"
             >
-              <h3 class="text-2xl font-bold font-open-sans text-orange mb-2">
-                Industrial Facility
-              </h3>
+              <h3 class="text-2xl font-bold text-orange mb-2">منشأة صناعية</h3>
               <p
-                class="text-white text-base font-inter opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                class="text-white text-base opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               >
-                A modern industrial facility designed with advanced
-                manufacturing capabilities and sustainable practices.
+                منشأة صناعية حديثة مصممة بقدرات تصنيعية متقدمة وممارسات مستدامة.
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Services Section -->
     <section
       id="services"
-      class="relative py-16 px-6 bg-gradient-to-r from-orange-600/90 via-gray-800 to-gray-900"
+      class="relative py-16 px-6 bg-gradient-to-l from-orange-600/90 via-gray-800 to-gray-900"
     >
       <div class="container mx-auto">
         <!-- Section Header -->
         <div class="text-center mb-12">
-          <h2
-            class="text-4xl md:text-5xl font-bold font-open-sans text-orange mb-4"
-          >
-            Our Services
+          <h2 class="text-4xl md:text-5xl font-bold text-orange mb-4">
+            خدماتنا
           </h2>
-          <p class="text-lg md:text-xl font-inter text-white max-w-3xl mx-auto">
-            We offer comprehensive construction and contracting services with a
-            focus on quality, innovation, and client satisfaction.
+          <p class="text-lg md:text-xl text-white max-w-3xl mx-auto">
+            نقدم خدمات شاملة في مجال البناء والمقاولات مع التركيز على الجودة
+            والابتكار ورضا العملاء.
           </p>
         </div>
 
@@ -903,13 +873,10 @@
                 />
               </svg>
             </div>
-            <h3 class="text-2xl font-bold font-open-sans text-orange mb-4">
-              Building Construction
-            </h3>
-            <p class="text-white font-inter">
-              From residential complexes to commercial towers, we deliver
-              high-quality construction projects with attention to detail and
-              modern building techniques.
+            <h3 class="text-2xl font-bold text-orange mb-4">البناء والتشييد</h3>
+            <p class="text-white">
+              من المجمعات السكنية إلى الأبراج التجارية، نقدم مشاريع بناء عالية
+              الجودة مع الاهتمام بالتفاصيل وتقنيات البناء الحديثة.
             </p>
           </div>
 
@@ -934,13 +901,10 @@
                 />
               </svg>
             </div>
-            <h3 class="text-2xl font-bold font-open-sans text-orange mb-4">
-              Project Management
-            </h3>
-            <p class="text-white font-inter">
-              Expert project management services ensuring timely delivery, cost
-              efficiency, and the highest quality standards throughout the
-              construction process.
+            <h3 class="text-2xl font-bold text-orange mb-4">إدارة المشاريع</h3>
+            <p class="text-white">
+              خدمات إدارة مشاريع متخصصة تضمن التسليم في الوقت المحدد، وكفاءة
+              التكلفة، وأعلى معايير الجودة طوال عملية البناء.
             </p>
           </div>
 
@@ -965,12 +929,12 @@
                 />
               </svg>
             </div>
-            <h3 class="text-2xl font-bold font-open-sans text-orange mb-4">
-              Design & Engineering
+            <h3 class="text-2xl font-bold text-orange mb-4">
+              التصميم والهندسة
             </h3>
-            <p class="text-white font-inter">
-              Innovative architectural design and engineering solutions that
-              combine aesthetics with functionality and sustainability.
+            <p class="text-white">
+              حلول تصميم وهندسة معمارية مبتكرة تجمع بين الجماليات والوظائف
+              والاستدامة.
             </p>
           </div>
 
@@ -995,12 +959,12 @@
                 />
               </svg>
             </div>
-            <h3 class="text-2xl font-bold font-open-sans text-orange mb-4">
-              Interior Finishing
+            <h3 class="text-2xl font-bold text-orange mb-4">
+              التشطيبات الداخلية
             </h3>
-            <p class="text-white font-inter">
-              High-end interior finishing services with premium materials and
-              expert craftsmanship for both residential and commercial projects.
+            <p class="text-white">
+              خدمات تشطيبات داخلية فاخرة بمواد عالية الجودة وخبرات حرفية متميزة
+              للمشاريع السكنية والتجارية.
             </p>
           </div>
 
@@ -1025,12 +989,10 @@
                 />
               </svg>
             </div>
-            <h3 class="text-2xl font-bold font-open-sans text-orange mb-4">
-              MEP Services
-            </h3>
-            <p class="text-white font-inter">
-              Comprehensive mechanical, electrical, and plumbing services with a
-              focus on energy efficiency and modern technology integration.
+            <h3 class="text-2xl font-bold text-orange mb-4">خدمات MEP</h3>
+            <p class="text-white">
+              خدمات ميكانيكية وكهربائية وسباكة شاملة مع التركيز على كفاءة الطاقة
+              ودمج التكنولوجيا الحديثة.
             </p>
           </div>
 
@@ -1055,12 +1017,12 @@
                 />
               </svg>
             </div>
-            <h3 class="text-2xl font-bold font-open-sans text-orange mb-4">
-              Infrastructure Development
+            <h3 class="text-2xl font-bold text-orange mb-4">
+              تطوير البنية التحتية
             </h3>
-            <p class="text-white font-inter">
-              Large-scale infrastructure projects including roads, bridges, and
-              utilities with a commitment to sustainable development.
+            <p class="text-white">
+              مشاريع بنية تحتية واسعة النطاق تشمل الطرق والجسور والمرافق مع
+              الالتزام بالتنمية المستدامة.
             </p>
           </div>
         </div>
@@ -1070,19 +1032,16 @@
     <!-- Contact Section -->
     <section
       id="contact"
-      class="relative py-16 px-6 bg-gradient-to-r from-gray-900 via-gray-800 to-orange-600/90"
+      class="relative py-16 px-6 bg-gradient-to-l from-gray-900 via-gray-800 to-orange-600/90"
     >
       <div class="container mx-auto">
         <!-- Section Header -->
         <div class="text-center mb-12">
-          <h2
-            class="text-4xl md:text-5xl font-bold font-open-sans text-orange mb-4"
-          >
-            Contact Us
+          <h2 class="text-4xl md:text-5xl font-bold text-orange mb-4">
+            تواصل معنا
           </h2>
-          <p class="text-lg md:text-xl font-inter text-white max-w-3xl mx-auto">
-            Get in touch with us to discuss your next project or learn more
-            about our services.
+          <p class="text-lg md:text-xl text-white max-w-3xl mx-auto">
+            تواصل معنا لمناقشة مشروعك القادم أو لمعرفة المزيد عن خدماتنا.
           </p>
         </div>
 
@@ -1110,11 +1069,9 @@
           <div class="space-y-8">
             <!-- Company Info -->
             <div class="bg-white/10 backdrop-blur-sm rounded-lg p-8 shadow-lg">
-              <h3 class="text-2xl font-bold font-open-sans text-orange mb-6">
-                Office Location
-              </h3>
+              <h3 class="text-2xl font-bold text-orange mb-6">موقع المكتب</h3>
               <div class="space-y-4">
-                <div class="flex items-start space-x-4">
+                <div class="flex items-start space-x-reverse space-x-4">
                   <svg
                     class="w-6 h-6 text-orange mt-1"
                     fill="none"
@@ -1135,13 +1092,13 @@
                     />
                   </svg>
                   <div>
-                    <h4 class="text-white font-bold mb-1">Address</h4>
+                    <h4 class="text-white font-bold mb-1">العنوان</h4>
                     <p class="text-gray-300">
-                      123 Business District<br />Riyadh, Saudi Arabia
+                      123 المنطقة التجارية<br />الرياض، المملكة العربية السعودية
                     </p>
                   </div>
                 </div>
-                <div class="flex items-start space-x-4">
+                <div class="flex items-start space-x-reverse space-x-4">
                   <svg
                     class="w-6 h-6 text-orange mt-1"
                     fill="none"
@@ -1156,7 +1113,7 @@
                     />
                   </svg>
                   <div>
-                    <h4 class="text-white font-bold mb-1">Email</h4>
+                    <h4 class="text-white font-bold mb-1">البريد الإلكتروني</h4>
                     <a
                       href="mailto:info@arcalbonian.com"
                       class="text-gray-300 hover:text-orange transition-colors"
@@ -1164,7 +1121,7 @@
                     >
                   </div>
                 </div>
-                <div class="flex items-start space-x-4">
+                <div class="flex items-start space-x-reverse space-x-4">
                   <svg
                     class="w-6 h-6 text-orange mt-1"
                     fill="none"
@@ -1179,7 +1136,7 @@
                     />
                   </svg>
                   <div>
-                    <h4 class="text-white font-bold mb-1">Phone</h4>
+                    <h4 class="text-white font-bold mb-1">الهاتف</h4>
                     <a
                       href="tel:+966123456789"
                       class="text-gray-300 hover:text-orange transition-colors"
@@ -1192,21 +1149,19 @@
 
             <!-- Business Hours -->
             <div class="bg-white/10 backdrop-blur-sm rounded-lg p-8 shadow-lg">
-              <h3 class="text-2xl font-bold font-open-sans text-orange mb-6">
-                Business Hours
-              </h3>
+              <h3 class="text-2xl font-bold text-orange mb-6">ساعات العمل</h3>
               <div class="space-y-3">
                 <div class="flex justify-between">
-                  <span class="text-white">Sunday - Thursday</span>
-                  <span class="text-gray-300">8:00 AM - 5:00 PM</span>
+                  <span class="text-white">الأحد - الخميس</span>
+                  <span class="text-gray-300">8:00 ص - 5:00 م</span>
                 </div>
                 <div class="flex justify-between">
-                  <span class="text-white">Friday</span>
-                  <span class="text-gray-300">Closed</span>
+                  <span class="text-white">الجمعة</span>
+                  <span class="text-gray-300">مغلق</span>
                 </div>
                 <div class="flex justify-between">
-                  <span class="text-white">Saturday</span>
-                  <span class="text-gray-300">9:00 AM - 2:00 PM</span>
+                  <span class="text-white">السبت</span>
+                  <span class="text-gray-300">9:00 ص - 2:00 م</span>
                 </div>
               </div>
             </div>
@@ -1223,45 +1178,43 @@
           <div class="space-y-4">
             <img
               src="../images/logo arc.svg"
-              alt="Arc Al Bonian Logo"
+              alt="شعار آرك البنيان"
               class="h-16 w-16"
             />
-            <h4 class="text-xl font-bold text-orange">Arc Al Bonian</h4>
-            <p class="text-gray-400">
-              Leading the future of construction with innovation and excellence.
-            </p>
+            <h4 class="text-xl font-bold text-orange">آرك البنيان</h4>
+            <p class="text-gray-400">نقود مستقبل البناء بالابتكار والتميز.</p>
           </div>
 
           <!-- Quick Links -->
           <div>
-            <h4 class="text-xl font-bold text-orange mb-4">Quick Links</h4>
+            <h4 class="text-xl font-bold text-orange mb-4">روابط سريعة</h4>
             <ul class="space-y-2">
               <li>
                 <a
                   href="#about"
                   class="text-gray-400 hover:text-orange transition-colors"
-                  >About Us</a
+                  >من نحن</a
                 >
               </li>
               <li>
                 <a
                   href="#services"
                   class="text-gray-400 hover:text-orange transition-colors"
-                  >Services</a
+                  >خدماتنا</a
                 >
               </li>
               <li>
                 <a
                   href="#projects"
                   class="text-gray-400 hover:text-orange transition-colors"
-                  >Projects</a
+                  >المشاريع</a
                 >
               </li>
               <li>
                 <a
                   href="#contact"
                   class="text-gray-400 hover:text-orange transition-colors"
-                  >Contact</a
+                  >تواصل معنا</a
                 >
               </li>
             </ul>
@@ -1269,34 +1222,34 @@
 
           <!-- Services -->
           <div>
-            <h4 class="text-xl font-bold text-orange mb-4">Services</h4>
+            <h4 class="text-xl font-bold text-orange mb-4">خدماتنا</h4>
             <ul class="space-y-2">
               <li>
                 <a
                   href="#"
                   class="text-gray-400 hover:text-orange transition-colors"
-                  >Building Construction</a
+                  >البناء والتشييد</a
                 >
               </li>
               <li>
                 <a
                   href="#"
                   class="text-gray-400 hover:text-orange transition-colors"
-                  >Project Management</a
+                  >إدارة المشاريع</a
                 >
               </li>
               <li>
                 <a
                   href="#"
                   class="text-gray-400 hover:text-orange transition-colors"
-                  >Interior Finishing</a
+                  >التشطيبات الداخلية</a
                 >
               </li>
               <li>
                 <a
                   href="#"
                   class="text-gray-400 hover:text-orange transition-colors"
-                  >MEP Services</a
+                  >خدمات MEP</a
                 >
               </li>
             </ul>
@@ -1304,7 +1257,7 @@
 
           <!-- Social Media -->
           <div>
-            <h4 class="text-xl font-bold text-orange mb-4">Follow Us</h4>
+            <h4 class="text-xl font-bold text-orange mb-4">تابعنا</h4>
             <div class="flex space-x-4">
               <a
                 href="#"
@@ -1354,14 +1307,14 @@
         <div class="border-t border-gray-800 mt-12 pt-8">
           <div class="flex flex-col md:flex-row justify-between items-center">
             <p class="text-gray-400 text-sm">
-              © 2024 Arc Al Bonian. All rights reserved.
+              © 2024 آرك البنيان. جميع الحقوق محفوظة.
             </p>
-            <div class="flex space-x-6 mt-4 md:mt-0">
+            <div class="flex space-x-reverse space-x-6 mt-4 md:mt-0">
               <a href="#" class="text-gray-400 hover:text-orange text-sm"
-                >Privacy Policy</a
+                >سياسة الخصوصية</a
               >
               <a href="#" class="text-gray-400 hover:text-orange text-sm"
-                >Terms of Service</a
+                >شروط الخدمة</a
               >
             </div>
           </div>
@@ -1369,7 +1322,7 @@
       </div>
     </footer>
 
-    <!-- Include JavaScript -->
-    <script src="./main.js"></script>
+    <!-- Include JavaScript with RTL support -->
+    <script src="./main-ar.js"></script>
   </body>
 </html>
