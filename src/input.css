@@ -3,7 +3,6 @@
 /* Base font settings */
 @layer base {
   html {
-    
     font-family: "Open Sans", sans-serif;
   }
 
@@ -104,4 +103,24 @@
 
 .carousel-next {
   right: 1rem;
+}
+
+/* Project Card Responsive Styles */
+@media (max-width: 1023px) {
+  /* Below lg breakpoint */
+  .project-card-overlay {
+    transform: translateY(0) !important;
+    background: linear-gradient(
+      to bottom,
+      rgba(17, 24, 39, 0.9),
+      rgba(17, 24, 39, 0.7),
+      transparent
+    );
+    justify-content: flex-start !important;
+    padding-top: 1.5rem !important;
+  }
+
+  .project-card-description {
+    opacity: 1 !important;
+  }
 }
