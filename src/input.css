@@ -3,6 +3,7 @@
 /* Base font settings */
 @layer base {
   html {
+    scroll-behavior: smooth;
     font-family: "Open Sans", sans-serif;
   }
 

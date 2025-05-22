@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const mobileMenu = document.getElementById("mobile-menu");
   const toggleButton = document.getElementById("menu-toggle");
+  const isRTL = document.documentElement.dir === "rtl"; // Detect page direction
 
   // Toggle menu when hamburger is clicked
   toggleButton.addEventListener("click", (e) => {
@@ -85,26 +86,38 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       showSlide(0);
 
-      // Set up button event listeners
-      if (prevBtn) {
-        prevBtn.addEventListener("click", prevSlide);
+      // Set up button event listeners - Handles both LTR and RTL
+      if (prevBtn && nextBtn) {
+        if (isRTL) {
+          // In RTL mode, swap the behavior of prev and next buttons
+          prevBtn.addEventListener("click", nextSlide); // Right arrow moves to next slide in RTL
+          nextBtn.addEventListener("click", prevSlide); // Left arrow moves to previous slide in RTL
+        } else {
+          prevBtn.addEventListener("click", prevSlide);
+          nextBtn.addEventListener("click", nextSlide);
+        }
+
         // Prevent click events from bubbling up to parent elements
         prevBtn.addEventListener("mousedown", (e) => e.stopPropagation());
-      }
-
-      if (nextBtn) {
-        nextBtn.addEventListener("click", nextSlide);
-        // Prevent click events from bubbling up to parent elements
         nextBtn.addEventListener("mousedown", (e) => e.stopPropagation());
       }
 
-      // Add keyboard navigation
+      // Add keyboard navigation - Handles both LTR and RTL
       carousel.setAttribute("tabindex", "0");
       carousel.addEventListener("keydown", (e) => {
-        if (e.key === "ArrowLeft") {
-          prevSlide(e);
-        } else if (e.key === "ArrowRight") {
-          nextSlide(e);
+        if (isRTL) {
+          // In RTL layout, swap arrow key behavior
+          if (e.key === "ArrowRight") {
+            prevSlide(e); // Right arrow moves to previous in RTL
+          } else if (e.key === "ArrowLeft") {
+            nextSlide(e); // Left arrow moves to next in RTL
+          }
+        } else {
+          if (e.key === "ArrowLeft") {
+            prevSlide(e);
+          } else if (e.key === "ArrowRight") {
+            nextSlide(e);
+          }
         }
       });
 
@@ -150,19 +163,44 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 2000);
   }
 
-  // Continue with the rest of the code...
-
-  // Smooth scroll for navigation links
+  // Enhanced smooth scroll for navigation links with custom easing
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
       const targetId = this.getAttribute("href");
       const targetElement = document.querySelector(targetId);
+      const headerOffset = 80; // Account for fixed header
+      
       if (targetElement) {
-        targetElement.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
+        // Use getBoundingClientRect for more accurate positioning
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const startPosition = window.pageYOffset;
+        const distance = elementPosition + startPosition - headerOffset;
+        const duration = 1200; // Slightly longer duration for even smoother effect
+        let start = null;
+        
+        function easeInOutCubic(t) {
+          return t < 0.5 
+            ? 4 * t * t * t 
+            : 1 - Math.pow(-2 * t + 2, 3) / 2;
+        }
+        
+        function animation(currentTime) {
+          if (start === null) start = currentTime;
+          const timeElapsed = currentTime - start;
+          const progress = Math.min(timeElapsed / duration, 1);
+          
+          window.scrollTo({
+            top: startPosition + ((distance - startPosition) * easeInOutCubic(progress)),
+            left: 0,
+          });
+          
+          if (timeElapsed < duration) {
+            requestAnimationFrame(animation);
+          }
+        }
+        
+        requestAnimationFrame(animation);
       }
     });
   });

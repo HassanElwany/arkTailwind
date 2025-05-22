@@ -306,9 +306,6 @@
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
   }
-  .block {
-    display: block;
-  }
   .flex {
     display: flex;
   }
@@ -994,6 +991,7 @@
 }
 @layer base {
   html {
+    scroll-behavior: smooth;
     font-family: "Open Sans", sans-serif;
   }
   h1, h2, h3, h4, h5, h6 {
