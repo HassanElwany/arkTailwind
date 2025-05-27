@@ -4,7 +4,7 @@
   "description": "Tailwind CSS v4.1 Project",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./src/output.css && postcss ./src/output.css -o ./src/output.min.css",
+    "build": "tailwindcss -i ./src/input.css -o ./src/output.css",
     "watch": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,9 +14,5 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.0",
     "tailwindcss": "^4.1.0"
-  },
-  "devDependencies": {
-    "cssnano": "^7.0.7",
-    "postcss-cli": "^11.0.1"
   }
 }
