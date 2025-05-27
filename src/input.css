@@ -107,13 +107,17 @@
 }
 
 /* Service Cards Styles */
-#services .container {
+#services .container{
   position: relative;
   z-index: 1;
 }
 
 /* Make service cards stand out */
-#services .bg-white\/10 {
+#services .bg-white\/10,
+#values,
+#goals,
+#mission,
+#vision {
   background-color: #2b2929;
   backdrop-filter: blur(8px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08),
@@ -122,7 +126,11 @@
   position: relative;
 }
 
-#services .bg-white\/10:hover {
+#services .bg-white\/10:hover
+#values,
+#goals,
+#mission,
+#vision  {
   background-color: #2b2929;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(0, 0, 0, 0.2),
     inset 0 0 0 1px rgba(255, 255, 255, 0.15);
